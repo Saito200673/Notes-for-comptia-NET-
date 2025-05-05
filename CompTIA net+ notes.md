@@ -18,8 +18,6 @@ And the Second part is the unique identifier of that NIC
  It is used to know whether an packet is sent to it or any other device on the network these have src mac addr and dest addr
  And CRC(cyclic redundancy check) which sees whether it’s an bad packet or not and if it’s an bad one it’s then resent 
 
-![[Pasted image 20250227071622.png]]
-
 One example where this is used is that when an device is newly connected to an network to know the mac addr of all the other devices on that network it sends out an broadcast message 
 
 But when communicating between two different networks MAC addresses aren’t helpful as they
@@ -29,7 +27,7 @@ But when communicating between two different networks MAC addresses aren’t hel
 This is where logical addressing is used which is mostly IP addressing 
 Which is not burned In to the NIC as mac does and in this routers are used to connect to another network and these routers store the ip addresses of other networks amd these are stored In an table called routing table and an ip packet doesn’t change 
 
-![[Pasted image 20250227161037.png]]
+
 TCP does the checking of packets whether it’s successfully sent to the destination if it’s lost TCP sends that particular packet again 
 
 **Network** **topologies**
@@ -42,9 +40,6 @@ Bus topology: an single cable to which all the devices are connected
 
 Ring topology:
 - As the name suggests the devices are connected in rings 
-
-![[Pasted image 20250227164412.png]]
-
 - when the cables between the devices fail only the devices on either side would get affected 
 - Nowadays this is hardly in use
 
@@ -91,7 +86,6 @@ Coaxial cable
 3. PVC sheathing 
 - Connected through an RJ-45 connector 
 - The speeds of the twisted pair are categorised by CAT ratings 
-- ![[Pasted image 20250301070443.png]]
 
 Fiber optic 
 - Along with twisted pair this is also one of the commonly used cabling 
@@ -120,9 +114,7 @@ And through the years even if the book is changed the frame which contains the d
 Here 10 means the speed of the connection in mbps
 and base means all the bandwidth is used in the connection and the last “5” means the length of the network here 5 means 500 meters and n
 
-
 Frame check sequence is the same as CRC
-![[Pasted image 20250305071711.png]]
 
 Carrier sense multiple access/collision detection (csma/cd)
 Used to detect collisions in an network where an hub is used and all the computers in that network doesnt send any Data till the randomly generated time which is in milliseconds 
@@ -134,8 +126,7 @@ Used to detect collisions in an network where an hub is used and all the compute
 - Im some switches you can find an uplink which when activated will make the port near to it so that even an straight through cables will work for connecting switches
 - nowadays the switches just auto senses what is connected to it and changes accordingly 
 - and it also resolves if there’s an switching loop
-
-![[Pasted image 20250307072335.png]]
+- 
 And the protocol which is used is STP(spanning tree protocol) which uses bridge protocol data units which is an frame and uses this to determine where there is an switching loop or not 
 
 **100BASET**
